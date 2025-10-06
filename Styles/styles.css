@@ -1,0 +1,161 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: sans-serif;  /* sets font for webpage */
+    background-color:rgb(255, 255, 255);  /* sets background colour for web page */
+    font-size: 20px; /* sets font size for web page */
+}
+
+h1{                   /* sets the formatting for h1 (header) */
+    background-color:rgb(0, 193, 252);
+    font-size: 40pt;
+}
+
+button{
+    background:rgb(0, 193, 252);
+    width: 100px;
+    border:none;
+    outline:none;
+    color: rgb(3, 3, 3);
+    height:35px;
+    border-radius:30px; /* rounds edges */
+    margin-top:20px;
+    font-size: 15pt;
+}
+
+/* FOR FORMATTING Contactus.php */
+
+.container{
+    width: 80%; /* sets width of container to 80% */
+    margin: 10px auto;  /* sets the margins...top, right, bottom, left */
+}
+
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+
+.contact-left{
+    flex-basis:40%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis:40%;
+    padding: 40px;
+    background-color:rgb(0, 193, 252);
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis:45%;
+}
+
+input{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom:5px;
+}
+
+textarea{
+    width:100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing:broder-box;
+}
+
+label{
+    margin-bottom:6px;
+    display:block;
+    color: rgb(3, 3, 3);
+}
+
+.contact-left h2{
+    font-weight:600;
+    margin-bottom: 30px;
+}
+
+.contact-right h2{
+    font-weight:600;
+    margin-bottom: 30px;
+}
+
+tr td{
+    padding-top:20px;
+    padding-right:20px;
+}
+
+/* FOR FORMATTING Login.php */
+
+.centered-image {
+     display: block;
+     margin: 0 auto;
+     width: 50%; /* centred */
+}
+
+.loginpic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position:absolute;
+    top: -80px;
+    left: 110px;
+}
+
+.loginbox {
+    width:350px;
+    height: 320px;
+    background-color:rgb(0, 193, 252);
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding:70px 30px;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.loginbox p{
+    text-align: center;
+}
+
+.error {                              /* From top of .loginbox */
+    top: 102%;
+    left: 0%;
+    position: absolute;
+    color: rgb(2, 0, 0);
+    font-size: 10pt;
+}
+
+footer {
+  position: fixed;
+  bottom: 1%;
+  height: 100px; 
+  width: 100%;
+}
+
+p1 {                              
+    top: 200px;
+    left: 300px;
+    position: absolute;
+    color: rgb(139, 214, 18);
+    font-size: 20pt;
+}
