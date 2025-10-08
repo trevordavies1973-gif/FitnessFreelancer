@@ -1,0 +1,38 @@
+CREATE DATABASE fitness;
+
+CREATE TABLE userdata (UserID int NOT NULL AUTO_INCREMENT, FirstName VARCHAR(30), LastName VARCHAR(30), Email VARCHAR(30), Password VARCHAR(30), OrgName VARCHAR(30), Status VARCHAR(30) DEFAULT 'Lead', PRIMARY KEY (userid));
+
+INSERT INTO userdata (FirstName,LastName) VALUES ('Trevor','Davies');
+
+SELECT * FROM userdata;
+
+CREATE TABLE callset (UserID INT, Date VARCHAR(30), Time VARCHAR(30), CallType VARCHAR(30), Aim VARCHAR(30), FOREIGN KEY (UserID) REFERENCES userdata (UserID));
+
+INSERT INTO callset (UserID, Date, Time, CallType, Aim) VALUES ('3','12 Jun 2025', '14:00', 'Phone', 'To learn more about product');
+
+CREATE TABLE callset (UserID INT, Date VARCHAR(30), Time VARCHAR(30), CallType VARCHAR(30), Aim VARCHAR(30), FOREIGN KEY (UserID) REFERENCES userdata (UserID));
+
+CREATE TABLE sales (UserID INT, Plan VARCHAR(30), Price VARCHAR(30), DateOfSale VARCHAR(30), FOREIGN KEY (UserID) REFERENCES userdata (UserID));
+
+INSERT INTO sales (UserID, Plan, Price, DateOfSale) VALUES ('3','Premium', '$59.63', '29 Jun 2025');
+
+SELECT * FROM sales;
+
+CREATE TABLE feedback (UserID INT, Date1 VARCHAR(30)SHOW , Rating VARCHAR(30), Comments VARCHAR(30), FOREIGN KEY (UserID) REFERENCES userdata (UserID));
+
+INSERT INTO feedback (UserID, Date1, Rating, Comments) VALUES ('3','12 Jun 2025', '9/10', 'Andy is amazing!');
+
+SELECT * FROM feedback;
+
+SHOW TABLES;
+
+DROP TABLE login;
+
+ALTER TABLE userdata ADD Password varchar(255);
+
+UPDATE userdata SET Password = '123', Email = 'trevor.davies.1973@gmail.com' WHERE UserID = 1;
+UPDATE userdata SET Status = 'Admin', OrgName = 'Happy Times' WHERE UserID = 1;
+
+DELETE FROM table_name WHERE condition;
+
+ALTER TABLE feedback RENAME COLUMN Date TO Date1;
