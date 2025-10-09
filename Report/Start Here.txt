@@ -1,0 +1,21 @@
+Here are the instructions to get this website working on your computer:
+
+1.  Download the entire package using GitHub.  It can be found at:
+https://github.com/trevordavies1973-gif/FitnessFreelancer
+
+2.  Install the following programs on your computer:
+-MySQL (database)
+-Ampps (allows the simulation of the internet and supports .php, .html and MySQL
+
+3.  Use the "Code to Build MySQL Database" file in the "Reports" folder to build the database.
+
+4.  Place all .html and .php files along with the folders "Images" and "Styles" in the same folder.  Point the Ampps program to this folder.
+
+5.  Start the website by using the Index.php file.  This is the website's landing page.  
+
+6.  Other supporting documents pertaining to this website can be found in the "Reports" folder including:
+-Final Capstone Project Report
+-Code to Build MySQL Database
+-Link to Video Walk Through on YouTube
+
+Enjoy!
